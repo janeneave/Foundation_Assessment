@@ -8,13 +8,16 @@
 
 4. NULL is a special marker used in SQL to represent that a __data value it is in place of does not exist in the database, it is unknown or missing__.
 
-5.
+5.	Scrum Master chiefly facilitates the application of Scrum and keeps the Scrum up to date. They're responsibilities include: 
+
+    - a.) __Organising and conducting Scrum events__ such as: Sprint Planning/Reviews, Daily Stand-Ups and Restrospectives
+    - b.) __Coaching, mentoring and training the teams.__ Helps teams to become self-organising, empowers them with training and aids them by removing impediments. 
 
 6.
 
 7.	This function might throw an error if incorrect data types are given as arguments to the function in place of the parameters e.g. if ‘price’ and/or ‘cash_given’ are not given as the same data type it would raise a __TypeError__. This means if the you attempted to call the function to compare a numeric value (e.g. float/integer) to a non-numeric value (e.g. string or a list), or attempted to compare a list to anything but a list, the function cannot be called as the operator isn’t supported to compare across data types, e.g. a string to a list or a string to a integer, a string to a float etc. 
 
-A __try-except__ block could be used to catch this exception. This means that when the function is called first the try: block will be attempted, and if any Exceptions arise (e.g. attempting to compare a string to an float) the except block will run and print the Type Error instead.
+    A __try-except__ block could be used to catch this exception. This means that when the function is called first the try: block will be attempted, and if any Exceptions arise (e.g. attempting to compare a string to an float) the except block will run and print the Type Error instead.
 ```python
 def can_pay(price, cash_given):
     try:
