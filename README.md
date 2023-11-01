@@ -4,3 +4,4 @@
 
 2. A __ZeroDivisionError__, because a division by 0 is not possible.
 
+3. __git push__ is used to transfer commits made on the a local repo to the remote repo
