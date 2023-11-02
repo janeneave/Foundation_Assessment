@@ -2,7 +2,7 @@
 
 1.1) __Relational Database Management System__. It is type of database management system which stores and enables access and querying to data that is related to each other, based on the relational model of representing data in tables.
 
-1.2) A __ZeroDivisionError__, because a division by 0 is not possible.
+1.2) Using a string without quotes in a print statement will raise a __NameError__. This is because Python will interpret the quoteless string as a variable name, and undefined variables raise a NameError.
 
 1.3) __git push__ is used to transfer commits made on the a local repo to the remote repo.
 
