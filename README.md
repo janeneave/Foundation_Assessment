@@ -14,7 +14,12 @@
 - __Code Creation and maintenance:__ Ordinarily, devs must research, design, implement and then manage the software they create, checking it for bugs and ensuring the integrity and robustness of the code they write.
 - __Code Testing and Development:__ Devs have to make sure they are testing their code and evaluating the outcome of these tests to see if there are ways to modify the existing code to make it better/simpler/faster to achieve their objectives, whilst meeting deadlines.  They can then develop and work on these modifications further.
 
-1.7)
+1.7) Considerations/Problems with designing a shopping website: 
+- __Scalability:__ would have to maintain the website so that it’s performance isn’t affected over time, as slow loading speeds can be off-putting for customers. Moreover, the website must be able to handle spikes of activity at peak times and when site traffic increases. Conducting stress testing and using a cloud server, like Google Cloud or Azure, to host the server could reduce this strain.
+- __Data Security:__ it is important to protect that user information and make sure it is not compromised and that the data we collect complies with the law (like the GDHC). Additionally, payment information should be kept secure. Payment gateway (vulnerabilities could enable unsafe transactions and lead to data breaches or fraudulent activity. Attempt to use a fairly secure payment gateway, like PayPal or Google/Apple Pay.
+- __Accessibility:__ It is important to ensure the site’s design is accessible to a diverse customer base, for example, takes into account people with impaired vision or colour-blindness. Can integrate a read-aloud system wand alt text for clothing descriptions, as well as offering a high contrast/colour-blind friendly interface. It would also be good to consider establishing an effective customer services integration into the website, which can offer assistance so customers aren’t left disappointed or dissatisfied and can have their problems resolved.
+- __Usability:__ would have to consider the user-interface design to make it intuitive to navigate easily, so that customers want to return with the aim to reduce “bounce rate”. Also important to consider ensuring the staff/business-interface is easy to navigate, access and straightforward to conduct the necessary business actions on, such as managing inventory. We would also want to consider designing the interface to be responsive to difference devices and screen sizes to maintain consistency of look and functionality for users.
+
 
 1.8) This function could throw an error if incorrect data types are given as arguments to the function in place of the parameters e.g. if ‘numerator’ and/or ‘denominator’ are not given as numerical data types it would raise a __TypeError__. This means if the you attempted to call the function to with a numeric value (e.g. float/integer) and a non-numeric value (e.g. string or a list) in either argument position, or attempted to use two non-numeric values, the function cannot be carried out.  This is because the divide operator isn’t supported to divide across non-numerical data types, e.g. won’t divide a ‘list’ by an ‘int’ or a ‘string’ by another ‘string’, or a n ‘float’ by a ‘string’ etc. (Instead you could try using split() for a string or looping through a list.)
 
@@ -34,33 +39,8 @@ Will result in the following error being printed in the console:
 ```python
 TypeError: unsupported operand type(s) for /: 'str' and 'int' 
 ```
-(It would also throw a ZeroDivisionError if the denominator was set to 0, as a division by 0 is not possible.)
-
-
-1.8) __git branching is a technique to create and allow for seperate lines of development within a single repository.__ Branches are created (using 'git branch <branch_name>') often in parallel  to others, enabling many people to work con-currently and many changes to be made simultaneously. Branches can be specific to a feature or piece of code a person is working on, or can be used to encapsulate specific sets of changes without touching the main branch (or trunk) in the remote repo, until a pull request and merge is made. This means devs can work on feature developments, perform bug fixes, experiment with code and run tests independently without interfering with each other's code. Each branch represents a seperate line of development. Once a branch is made, 'git add' and 'git commit' can be used to add these changes to the person's local version of the repo, and then 'git push' can be used to push from the branch on the local repo to the remote repo. Then a Pull Request can be created, which can be checked by the dev or others, and when ready it is accepted and then merged into the trunk. Or 'git merge' can be used. Multiple branches can be created, and 'git checkout <branch_name>' is used to switch between them. Git branching enables an organised way of managing the development process and minimises the risk of destabilising the main/trunk codebase, especially when multiple people are working in parallel.
+(It could also throw a ZeroDivisionError if the denominator was set to 0, as a division by 0 is not possible.)
 
 1.9)
- This restaurant ordering system is designed with the aim to follow a client-server model. It will use a web-based front end for customers, which has potential to be devloped into an app for iOS or Android. It also takes into account staff interacting with a backend server to manage order processing, stock, menu and customer databases, as well as it would most likely require some service integration from external sources to handle payments. 
 
-__List of key requirements__
-- A User Interface: the website will have a landing/home page, plus the ability for users to sign up/in. Once logged in, the website will offer the ability to edit user information in a profile area, adjust settings and view the potential restaurants which are avilable to order from. If selected, restaurants will each have a dedicated page that includes opening times, menu options, prices, location and contact details. There will also be a rating displayed and a place to read reviews and/or see real customer photos. There will be a menu bar to navigate the website, as well as a search bar to find specific dishes or cusisines. It would also incoporate a random spin-wheel for if the user just can't decide, a
-- Menu Management.
-- Ordering and Payment: Once the user has selected a resturant, the user can scroll through the menu, which will include the option for restaurant owners to add photos of the dishes, and select the food and beverages they wish to order.
-- Order Processing.
-- Admin/Staff Management.
-
-__Main Considerations and Problems__
-- Scalability.
-- Data Security.
-- Real-time Updates.
-- Integration.
-- Accesibility
-- Usability.
-
-__Potential Components or Tools__
-- Frontend Development Tools: React (JavaScript frameworks) for building customer/staff interfaces.
-- Backend Framework: Python for server-side logic and MySQL databases data storage and management.
-- Payment Gateway Integration: A secure payment gateway, like PayPal or Google/Apple Pay.
-- Real-time Communication: Server-sent events to keep track of real-time updates on order statuses.
-- Cloud Services: Use one like Google Cloud to host the server and allow for scalability so the website can handle spikes of activity at peak times and larger numbers of users.
-- Security Tools: Will adhere to GDHC guidelines as well as utilise encryption techniques to secure user information and payment data.
+1.10)
