@@ -6,7 +6,7 @@
 
 1.3) __Git__ is a widely used __version control system used for tracking changes to code and computer files during software development.__ It allows for multiple copies of a (software development) project’s codebase/files to be worked on independently and enables co-ordination and collaboration of code from devs working simultaneously using the same code. It is used in combination with GitHub, which allows local changes to code to be to be pushed and merges to the remote repo (normally after making a pull request).
 
-1.4) NULL is a special marker used in SQL to represent that a __data value it is in place of does not exist in the database, it is unknown or missing__.
+1.4) Multiple fields being used as a primary key is called a __Composite Key__.
 
 1.5)	Scrum Master chiefly facilitates the application of Scrum and keeps the Scrum up to date. They're responsibilities include: 
 
