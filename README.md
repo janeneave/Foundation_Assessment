@@ -8,10 +8,7 @@
 
 1.4) Multiple fields being used as a primary key is called a __Composite Key__.
 
-1.5)	Scrum Master chiefly facilitates the application of Scrum and keeps the Scrum up to date. They're responsibilities include: 
-
-- a.) __Organising and conducting Scrum events__ such as: Sprint Planning/Reviews, Daily Stand-Ups and Restrospectives
-- b.) __Coaching, mentoring and training the teams.__ Helps teams to become self-organising, empowers them with training and aids them by removing impediments. 
+1.5) __Application Programming Interface__ ( a software intermediary which allows applications to communicate/access/share data with and across one another) e.g. __The Met Office DataPoint API__ is a weather related API which provides access to a large range of weather data and forecast information for the UK. Devs can use this API to retrieve information about the weather (like conditions, forecasts, warnings) to integrate into the apps, website and services they are developing. 
 
 1.6) Types of debugging:
 
