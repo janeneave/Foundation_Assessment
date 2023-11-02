@@ -1,6 +1,6 @@
 # Theory Questions
 
-1.1) SDLC stands for __Software Development Life Cycle__. It is a structured process that enables the development of software. SDLC methodologies that can be followed include, for example, Agile and Waterfall.
+1.1) __Relational Database Management System__. It is type of database management system which stores and enables access and querying to data that is related to each other, based on the relational model of representing data in tables.
 
 1.2) A __ZeroDivisionError__, because a division by 0 is not possible.
 
