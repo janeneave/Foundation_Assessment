@@ -4,47 +4,47 @@ submitBtn.addEventListener("click", () => {
   const userNameInput = document.getElementById("userNameInputBox").value;
   const emailInput = document.getElementById("emailInputBox");
   const passwordInput = document.getElementById("passwordInputBox").value;
-  let nameError = document.getElementById('nameError');
-  let emailError = document.getElementById('emailError');
-  let passwordError = document.getElementById('passwordError');
-  validateEmail = checkEmailValid(emailInput)
+  let nameError = document.getElementById("nameError");
+  let emailError = document.getElementById("emailError");
+  let passwordError = document.getElementById("passwordError");
+  let submitError = document.getElementById("submitError");
 
-  let formPassed = true
+  validateEmail = checkEmailValid(emailInput);
 
-  if (
-      userNameInput.length < 3
-  ) {
+  let formPassed = true;
+
+  if (userNameInput.length < 3) {
     nameError.innerHTML = "Username less than 3 characters";
     formPassed = false;
   }
-  
-  if (
-    validateEmail === false
-  ) {
+
+  if (validateEmail === false) {
     emailError.innerHTML = "Email not valid";
-    formPassed = false
+    formPassed = false;
   }
-  
-  if (
-    passwordInput.length < 6
-  ) {
+
+  if (passwordInput.length < 6) {
     passwordError.innerHTML = "Password less than 6 characters";
-    formPassed = false
+    formPassed = false;
   }
-  
-  if (formPassed === false ||
+
+  if (
+    formPassed === false ||
     userNameInput.value === "" ||
     emailInput.value === "" ||
-    passwordInput.value === "")
-    {
-    alert('Login Unsuccessful')
+    passwordInput.value === ""
+  ) {
+    alert("Login Unsuccessful")
+    submitError.innerHTML = "Login Unsuccessful";
   } else {
-    alert('Login Successful')
+    submitError.innerHTML = "Login Successful";
+    let userInfoBox = document.getElementsByClassName("userInputBox");
+    for (i = 0; i < userInfoBox.length; i++) {
+      userInfoBox[i].style.background = "green";
+      userInfoBox[i].style.color = "white";
+    }
   }
-    
-      
 });
-
 
 function checkEmailValid(email) {
   const emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
