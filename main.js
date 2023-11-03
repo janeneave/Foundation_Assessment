@@ -19,7 +19,7 @@ submitBtn.addEventListener("click", () => {
   }
   
   if (
-    validateEmail = false
+    validateEmail === false
   ) {
     emailError.innerHTML = "Email not valid";
     formPassed = false
@@ -47,10 +47,10 @@ submitBtn.addEventListener("click", () => {
 
 
 function checkEmailValid(email) {
-  var emailFormat =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (email.value.match(emailFormat)) {
-    return true;
-  } else {
+  const emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailFormat.test(email.value)) {
     return false;
+  } else {
+    return true;
   }
 }
